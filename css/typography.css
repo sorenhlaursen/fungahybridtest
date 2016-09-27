@@ -1,0 +1,23 @@
+/*======================================*/
+/* TYPOGRAPHY                           */
+/*======================================*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3.75vw;
+	font-weight:300;
+}
+a   {text-decoration: none;}
+
+
+
+
+
+.content-block-title { font-size: 5vw; font-weight: bold; text-transform: none; color:#333;}
+
+.home-timeline-content h2 { font-size: 4.15vw;}
+.home-timeline-content p {font-size: 3.75vw; }
+.home-timeline-read-more, .home-timeline-date { font-size: 2.5vw;}
+ul.fungi-library-list li .fungi_details p{ font-size: 3vw;}
+ul.fungi-library-list li .fungi_details p.latin{ font-size: 3vw;font-style: italic;text-transform: uppercase;}
+ul.fungi-library-list li .fungi_details h4{ font-weight:600; font-size:4vw;}
+.user-nav ul a span{ font-size:5vw; font-weight:100;}

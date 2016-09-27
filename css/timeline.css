@@ -1,0 +1,82 @@
+#home-timeline {
+	position: relative;
+	z-index: 1;
+	margin-top: 5vw;
+	margin-bottom: 10vw;
+	}
+	#home-timeline::before {
+		/* this is the vertical line */
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 6vw;
+		height: 100%;
+		width: 0.75vw;
+		background: #009688; /*COLOR: teal*/
+		}
+.home-timeline-container {
+	/* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+	width: 98vw;
+	margin: 0 auto;
+	}
+	.home-timeline-container::after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+.home-timeline-block {
+	position: relative;
+	margin: 0;
+	}
+	.home-timeline-block:after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+	.home-timeline-block:first-child {
+		margin-top: 0;
+	}
+	.home-timeline-block:last-child {
+		margin-bottom: 0;
+	}
+
+.home-timeline-img {
+	position: absolute;
+	top: 0;
+	left: 1px;
+	width: 8vw;
+	height: 8vw;
+	padding: 2.5vw;
+	border-radius: 50%;
+	background: #009688;
+	}
+	.home-timeline-img img.svg {
+		width: 75%;
+		height: 75%;
+	}
+	.home-timeline-img img.svg path {fill:#fff;}
+	
+.home-timeline-content, .home-timeline-read-more, .home-timeline-date {display: block;}
+.home-timeline-content{
+	position: relative;
+	margin-left: 15vw;
+	margin-bottom: 1vw;
+	padding: 0vw 1vw 1vw 1vw;
+	}
+	.home-timeline-content::after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.home-timeline-content img{width:98%;display: block;}
+	
+	
+.home-timeline-read-more{
+	float: right;
+	padding: 2vw 1.5vw;
+	}
+.home-timeline-date{
+	float: left;
+	padding: 2vw 0;
+	opacity: .5
+	}

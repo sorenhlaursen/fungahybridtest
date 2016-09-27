@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+	xmlns:gap   = "http://phonegap.com/ns/1.0"
+	id          = "dk.funga.app"
+	versionCode = "1"
+	version     = "0.1.40">
+
+<!-- versionCode is optional and Android only -->
+
+	<name>FUNGA</name>
+
+	<description>
+		** FRAMEWORK BUILD ONLY **
+		Lær gode spisesvampe af kende, find dem, gem dine svampesteder med GPS-koordinater og del stederne med dine venner - hvis du tør ;-)
+	</description>
+
+	<author href="http://funga.dk" email="support@funga.dk">
+		Funga by Søren Laursen
+	</author>
+
+	<!-- ORIENTATION AND FULLSCREEN -->
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="true" />
+	<preference name="StatusBarOverlaysWebView" value="true"/>
+	<preference name="StatusBarBackgroundColor" value="#009688"/>
+	<preference name="StatusBarStyle" value="lightcontent" />
+
+	<!-- WHAT PLATFORM TO BUILD FOR -->
+	<platform name="ios" />
+	<platform name="android" />
+
+	<!-- ICON AND SPLASH SCREEN -->
+	<preference name="SplashScreenDelay" value="2000" />
+	<preference name="FadeSplashScreen" value="false"/>
+	<icon src="icon.png" />
+	<splash src="splash.png" />
+	<platform name="ios">
+	<!--=================
+		APP ICON
+		=================-->
+		<!-- iPhone / iPod Touch  -->
+		<icon src="device-icon-splash/icon-iphone-60.png" width="60" height="60" />
+		<icon src="device-icon-splash/icon-iphone-60@2x.png" width="120" height="120" />
+
+		<!-- iPhone 6 / 6+ -->
+		<icon src="device-icon-splash/icon-iphone-60@3x.png" width="180" height="180" />
+
+		<!-- iPad -->
+		<icon src="device-icon-splash/icon-ipad-76.png" width="76" height="76" />
+		<icon src="device-icon-splash/icon-ipad-76@2x.png" width="152" height="152" />
+
+		<!-- Settings Icon -->
+		<icon src="device-icon-splash/icon-iphone-29.png" width="29" height="29" />
+		<icon src="device-icon-splash/icon-iphone-29@2x.png" width="58" height="58" />
+
+		<!-- Spotlight Icon -->
+		<icon src="device-icon-splash/icon-iphone-40.png" width="40" height="40" />
+		<icon src="device-icon-splash/icon-iphone-40@2x.png" width="80" height="80" />
+
+	<!--=================
+		SPLAS SCREEN
+		=================-->
+		<!-- iPhone and iPod touch -->
+		<splash src="device-icon-splash/Default-portrait~iphone.png" width="320" height="480" />
+		<splash src="device-icon-splash/Default-portrait@2x~iphone4.png" width="640" height="960" />
+
+		<!-- iPhone 5 / iPod Touch (5th Generation) -->
+		<splash src="device-icon-splash/Default-portrait@2x~iphone5.png" width="640" height="1136" />
+
+		<!-- iPhone 6 -->
+		<splash src="device-icon-splash/Default-portrait@2x~iphone6.png" width="750" height="1334" />
+		<!-- missing --><splash src="device-icon-splash/Default-Portrait-736h@3x.png" width="1242" height="2208" />
+		<!-- missing --><splash src="device-icon-splash/Default-Landscape-736h@3x.png" width="2208" height="1242" />
+
+		<!-- iPhone 6plus -->
+		<splash src="device-icon-splash/Default-667h@2x.png" width="750" height="1334" />
+
+		<!-- iPad -->
+		<splash src="device-icon-splash/Default-Portrait~ipad.png" width="768" height="1024" />
+		<splash src="device-icon-splash/Default-Landscape~ipad.png" width="1024" height="768" />
+
+		<!-- Retina iPad -->
+		<splash src="device-icon-splash/Default-Portrait@2x~ipad.png" width="1536" height="2048" />
+		<splash src="device-icon-splash/Default-Landscape@2x~ipad.png" width="2048" height="1536" />
+
+
+	</platform>
+
+	<!-- INCLUDE CORDOVA PLUGIN TO MAKE STATUSBAR TEXT WHITE -->
+	<plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
+	<!-- INCLUDE CORDOVA CORE PLUGIN -->
+	<plugin name="cordova-plugin-battery-status" />
+	<plugin name="cordova-plugin-camera" />
+	<plugin name="cordova-plugin-media-capture" />
+	<plugin name="cordova-plugin-console" />
+	<plugin name="cordova-plugin-contacts" />
+	<plugin name="cordova-plugin-device" />
+	<plugin name="cordova-plugin-device-motion" />
+	<plugin name="cordova-plugin-device-orientation" />
+	<plugin name="cordova-plugin-dialogs" />
+	<plugin name="cordova-plugin-file" />
+	<plugin name="cordova-plugin-file-transfer" />
+	<plugin name="cordova-plugin-geolocation" />
+	<plugin name="cordova-plugin-globalization" />
+	<plugin name="cordova-plugin-inappbrowser" />
+	<plugin name="cordova-plugin-media" />
+	<plugin name="cordova-plugin-network-information" />
+	<plugin name="cordova-plugin-splashscreen" />
+	<plugin name="cordova-plugin-vibration" />
+</widget>

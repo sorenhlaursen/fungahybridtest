@@ -1,0 +1,77 @@
+/*======================================*/
+/*  5-2. FOOTER TOOLBAR */
+/*======================================*/
+.toolbar {
+	height: 14vw;
+	}
+	.toolbar:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 125px;
+		width: 100%;
+		display: block;
+		z-index: 15;
+		-webkit-transform-origin: 50% 0%;
+		transform-origin: 50% 0%;
+		opacity:1;
+	}
+
+.toolbar-inner{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index:99999;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	}
+ul.toolbar_icons{
+	list-style:none;
+	padding: 0px;
+	margin:0px;
+	display: inline-block;
+	text-align:center;
+	width:100%;
+	}
+	ul.toolbar_icons li{
+		list-style:none;
+		padding:0;
+		display: inline-block;
+		text-align:center;
+		width:16%;
+		margin:0 1%;
+	}
+	ul.toolbar_icons li.menuicon{
+		width:20%;
+		list-style:none;
+		padding:3% 0%;
+		margin:0 1%;
+		display: inline-block;
+		text-align:center;
+		-webkit-border-radius:250px;
+		-moz-border-radius:250px;
+		border-radius:250px;
+	}
+	ul.toolbar_icons li svg{
+		max-width:66%;
+	}
+	ul.toolbar_icons li.menuicon svg{
+		max-width:66%;
+	}

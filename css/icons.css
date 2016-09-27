@@ -1,0 +1,46 @@
+/*==============================================*/
+/* SVG ICONS */
+/*==============================================*/
+
+.svg.white path {fill: #fff;}
+.svg.white:hover path {fill: rgba(255, 255, 255, 0.7);}
+.svg.red path, .fungipage .fungititel .favorit.red path {fill: #cc0442;}
+
+/*==============================================*/
+/* ICON STRUCTURE */
+/*==============================================*/
+
+.custom-menu					{width:7vw;height:7vw;}
+i.icon.icon-back				{width:7vw;height:7vw;}
+i.icon.icon-bars				{width:7vw;height:7vw;}
+i.icon.icon-close				{width:7vw;height:7vw;}
+.navbar-inner .svg				{width:7vw;height:7vw;}
+.toolbar_icons .svg				{width:10vw;height:10vw;}
+.toolbar_icons li.menuicon .svg	{width:12vw;height:12vw;}
+.close_loginpopup_button .svg	{width:7vw;height:7vw;}
+.custom-menu.white          {background-image: url(../svg/menu.svg);}
+
+
+
+/*==============================================*/
+/* ICONS */
+/*==============================================*/
+i.icon.icon-back {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50'><path fill='#FFFFFF' d='M38.1,45.3c1.1,1.1,1.1,2.8,0,3.9c-1.1,1.1-2.8,1.1-3.9,0L11.9,27c-1.1-1.1-1.1-2.8,0-3.9L34.2,0.8 c1.1-1.1,2.8-1.1,3.9,0c1.1,1.1,1.1,2.8,0,3.9L17.8,25L38.1,45.3L38.1,45.3z'/></svg>");
+}
+i.icon.icon-camera {}
+i.icon.icon-f7 {}
+i.icon.icon-form-calendar {}
+i.icon.icon-form-comment {}
+i.icon.icon-form-email {}
+i.icon.icon-form-gender {}
+i.icon.icon-form-name {}
+i.icon.icon-form-password {}
+i.icon.icon-form-settings {}
+i.icon.icon-form-tel {}
+i.icon.icon-form-toggle {}
+i.icon.icon-form-url {}
+i.icon.icon-forward {}
+i.icon.icon-next {}
+i.icon.icon-plus {}
+i.icon.icon-prev {}

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+		
+		<title>Funga</title>
+	<!-- Path to Framework7 Library CSS-->
+	<link rel="stylesheet" href="css/framework7.ios.css">
+	
+	<!-- Path to map styles-->
+	<!-- Path to your custom app styles-->
+	<link rel="stylesheet" href="css/funga.css">
+
+	<!-- ACCESS TO LEAFLET MAP -->
+	<script src='js/mapbox-gl.js'></script>
+	<link href='css/mapbox-gl.css' rel='stylesheet' />
+	<!-- <script src="js/leaflet.js"></script> -->
+</head>
+<body>
+	<!-- Status bar overlay for fullscreen mode-->
+	<div class="statusbar-overlay"></div>
+	<!-- Panels overlay-->
+	<div class="panel-overlay"></div>
+
+	<!-- Left panel with reveal effect-->
+	<div class="panel panel-left panel-cover">
+		<div class="content-block">
+			<div class="user_login_info">
+				<div class="user_thumb">
+					<img src="img/user-sorenhlaursen.jpg" alt="" title="" />
+					<div class="user_details">
+						<p>Hej, <span>Søren</span></p>
+					</div>
+					<div class="user_social">
+						<a href="#" data-popup=".popup-social" class="open-popup"><img src="img/i-form-password-ios.svg" alt="" title="" /></a>
+					</div>
+				</div>
+
+				<nav class="user-nav">
+					<ul>
+						<a href="index.html" class="close-panel"><li>
+							<span>Forside</span>
+						</li></a>
+						<a href="fungi.html" class="close-panel"><li>
+							<span>Svampe</span>
+						</li></a>
+						<a href="features.html" class="close-panel"><li>
+							<span>Favoritter</span>
+							<strong class="green">12</strong>
+						</li></a>
+						<a href="#my-locations" class="close-panel"><li>
+							<span>Steder</span>
+							<strong class="blue">5</strong>
+						</li></a>
+						<a href="index.html" class="close-panel"><li>
+							<span>Gode råd</span>
+							</li></a>
+						<a href="about.html" class="close-panel"><li>
+							<span>Om app'en</span>
+							</li></a>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Right panel with cover effect-->
+	<div class="panel panel-right panel-cover">
+		<div class="content-block panel-right-content">
+			<img src="library/images/gallery/alm-kantarel/alm-kantarel.jpg" class="hero">
+			<h1>Heading 1</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<p>Paragraph content just goes on and on and on and on, and nobody knows when it's ever gonna stop. Paragraph content just goes on and on and on and on, and nobody knows when it's ever gonna stop. </p>
+		</div>
+	</div>
+	
+	
+<!--======================================================
+	Views [begin]
+	======================================================-->
+	<div class="views">
+	<!--======================================================
+		MAIN VIEW
+		should always bee class="view-main"
+		======================================================-->
+		<div class="view view-main">
+			<!-- Top Navbar-->
+			<div class="navbar">
+				<!-- Navbar inner for Index page-->
+				<div data-page="index" class="navbar-inner">
+					<div class="left icon-only">
+						&nbsp;
+					</div>
+					<div class="center sliding">FUNGA</div>
+					<div class="right">
+						<img src="svg/heart.svg" class="svg white" alt="" title="" />
+					</div>
+				</div>
+			</div>
+		<!--======================================================
+			PAGES
+			======================================================-->
+			<div class="pages navbar-fixed toolbar-through">
+			<!--======================================================
+				HOMEPAGE
+				======================================================-->
+				<div data-page="index" class="page">
+					<!-- Scrollable page content-->
+					<div class="page-content">
+						<!-- TIMELINE [BEGIN] -->
+						<div id="home-timeline" class="home-timeline-container">
+							<div class="home-timeline-block">
+								<div class="home-timeline-img">
+									<img src="svg/map-location.svg" class="svg white">
+								</div> <!-- cd-timeline-img -->
+
+								<div class="home-timeline-content">
+									<h2><span>Mark</span> har delt et nyt sted med dig</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+									<img src="img/map-preview.jpg" alt="Vis sted på kort" class="location">
+									<a href="#0" class="home-timeline-read-more">Vis sted</a>
+									<span class="home-timeline-date">Idag</span>
+								</div> <!-- cd-timeline-content -->
+							</div> <!-- cd-timeline-block -->
+							<div class="home-timeline-block">
+								<div class="home-timeline-img">
+									<img src="svg/map-location.svg" class="svg white">
+								</div> <!-- cd-timeline-img -->
+
+								<div class="home-timeline-content">
+									<h2>Karl Johan spottet i Nordsjælland!</h2>
+									<p>Så er første <span>Karl Johan</span> fund i Nordsjælland registreret!</p>
+									<a href="#0" class="home-timeline-read-more">Vis svamp</a>
+									<span class="home-timeline-date">1d siden</span>
+								</div> <!-- cd-timeline-content -->
+							</div> <!-- cd-timeline-block -->
+							<div class="home-timeline-block">
+								<div class="home-timeline-img">
+									<img src="svg/friends.svg" class="svg white">
+								</div> <!-- cd-timeline-img -->
+
+								<div class="home-timeline-content">
+									<h2><span>Michael</span> kommenteret på dit seneste svampefund</h2>
+									<p>Whaaaat...! Det er jo helt vildt så mange kantareller du har fundet... Pleaase fortæl mig hvor du har fundet dem henne!!! Del! Del! Del! :-) Ps. Så skal jeg nok kokkerere noget med svampe, fløde, rødt kød og rigelige mængde Chateaux!</p>
+									<a href="#0" class="home-timeline-read-more">Besvar besked</a>
+									<span class="home-timeline-date">4d siden</span>
+								</div> <!-- cd-timeline-content -->
+							</div> <!-- cd-timeline-block -->
+						</div><!-- TIMELINE [END] -->
+						
+						<!-- EXAMPEL SIMPLE NAVIGATION -->
+						<div class="content-block-title">What about simple navigation?</div>
+						<div class="content-block"><blockquote>Some text goes here in Quotation</blockquote></div>
+						<div class="list-block">
+							<ul>
+								<li><a href="about.html" class="item-link">
+									<div class="item-content">
+										<div class="item-inner">
+											<div class="item-title">About</div>
+										</div>
+									</div></a></li>
+								<li><a href="services.html" class="item-link">
+									<div class="item-content">
+										<div class="item-inner">
+											<div class="item-title">Services</div>
+										</div>
+									</div></a></li>
+								<li><a href="form.html" class="item-link">
+									<div class="item-content">
+										<div class="item-inner">
+											<div class="item-title">Form</div>
+										</div>
+									</div></a></li>
+							</ul>
+						</div>
+						
+						<!-- SIDE PANELS EXAMPEL -->
+						<div class="content-block-title">Side panels</div>
+						<div class="content-block">
+							<div class="row">
+								<div class="col-50"><a href="#" data-panel="left" class="button open-panel">Left Panel</a></div>
+								<div class="col-50"><a href="#" data-panel="right" class="button open-panel">Right Panel</a></div>
+							</div>
+						</div>
+					
+					</div><!-- page-content [end] -->
+				</div><!-- [end]  data-page="index" class="page" -->
+
+			
+				<!--======================================================
+					PAGE: My Locations
+					======================================================-->
+					<div data-page="my-locations" class="page cached">
+						<div class="page-content">
+							<div id="pages_maincontent map-wrapper">
+								<div class="page_content">
+									<div class="list-block">
+										<div id="mymap" style='width: 100vw; height: 90vh; position:relative;'>
+											<div id='maplayer' style="position:absolute;right:0;padding:5px;background:#ccc;color:#333;font-size:2.5vw;z-index:100;">
+												<input id='basic' type='radio' name='rtoggle' value='outdoors' checked='checked'>
+												<label for='basic'>Kort</label>
+												<input id='satellite' type='radio' name='rtoggle' value='satellite'>
+												<label for='satellite'>Satellit</label>
+											</div>
+											<div id="map-get-location-manual" style="position:absolute;bottom:0px;left:0;padding:5px;background:#ccc;color:#333;font-size:2.5vw;z-index:100;">locate me</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!--======================================================
+					PAGE: Add Location
+					======================================================-->
+					<div data-page="add-location" class="page cached">
+						<div class="page-content">
+							<div id="pages_maincontent map-wrapper">
+								<div class="page_content">
+									<div class="list-block">
+
+<div class="custom-accordion accordion-list">
+	<div class="accordion-item accordion-item-expanded">
+		<div class="accordion-item-toggle">
+			<img src="svg/plus.svg" style="width:7vw;" class="svg">
+			<span>Tilføj placering</span>
+		</div>
+		<div class="accordion-item-content no-padding">
+			<div id="map" style='width: 100vw; height: 45vh;position:relative;'>
+				<div class="map-center-dot"></div>
+				<div class="map-center-circle"></div>
+				<div class="gps-coordinates" style="position:absolute;left:0;padding:5px;background:#ccc;color:#333;font-size:2.5vw;z-index:100;">loading position..</div>
+				<div id='maplayer' style="position:absolute;right:0;padding:5px;background:#ccc;color:#333;font-size:2.5vw;z-index:100;">
+					<input id='basic' type='radio' name='rtoggle' value='outdoors' checked='checked'>
+					<label for='basic'>Kort</label>
+					<input id='satellite' type='radio' name='rtoggle' value='satellite'>
+					<label for='satellite'>Satellit</label>
+				</div>
+				<div id="map-get-location-manual" style="position:absolute;bottom:0px;left:0;padding:5px;background:#ccc;color:#333;font-size:2.5vw;z-index:100;">locate me</div>
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<div class="accordion-item-toggle">
+			<img src="svg/plus.svg" style="width:7vw;" class="svg">
+			<span>Tilføj svampe</span>
+		</div>
+		<div class="accordion-item-content no-padding">
+
+			<div class="list-block">
+			  <ul>
+				<li><a href="#" class="item-link smart-select" data-open-in="popup" data-searchbar="true" data-searchbar-placeholder="Søg svampe">
+
+					<!-- "multiple" attribute for multiple select-->
+					<select name="svampe" multiple>
+					  <!-- options grouped within "optgroup" tag-->
+					  <optgroup label="Favoritter">
+						<option value="">Alm. Kantarel</option>
+						<option value="">Rødgul Pigsvamp</option>
+						<option value="">Stor Trompetsvamp</option>
+					  </optgroup>
+					  <optgroup label="Alle svampe">
+						<option value="">Alm. Kantarel</option>
+						<option value="">Alm. Pigsvamp</option>
+						<option value="">Brun Birke Rørhat</option>
+						<option value="">Karl Johan</option>
+						<option value="">Punkstokket Indigo Rørrhat</option>
+						<option value="">Roedgul Pigsvamp</option>
+						<option value="">Stor Trompetsvamp</option>
+						<option value="">Tragt Kantarel</option>
+					  </optgroup>
+					</select>
+					<div class="item-content">
+					  <div class="item-inner">
+						  Vælg svampe
+					  </div>
+					</div></a></li>
+			  </ul>
+			</div>
+		
+		
+		</div>
+	</div>
+	<div class="accordion-item">
+		<div class="accordion-item-toggle">
+			<img src="svg/plus.svg" style="width:7vw;" class="svg">
+			<span>Tilføj billeder</span>
+		</div>
+		<div class="accordion-item-content">
+			<p>
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+			</p>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<div class="accordion-item-toggle">
+			<img src="svg/plus.svg" style="width:7vw;" class="svg">
+			<span>Tilføj beskrivelse/kommentar</span>
+		</div>
+		<div class="accordion-item-content">
+			<form>
+				
+				<textarea name="message" class="form_textarea" rows="" cols="" style="border: 1px solid #ccc;">Skriv her..</textarea>
+			</form>
+		</div>
+	</div>
+</div>
+										
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+			
+			
+			</div>
+		<!--======================================================
+			Bottom Toolbar
+			======================================================-->
+			<div class="toolbar">
+				<div class="toolbar-inner">
+					<ul class="toolbar_icons">
+						<li>
+							<a href="#" data-panel="left" class="open-panel"><img src="svg/menu.svg" class="svg white" alt="" title="" /></a>
+						</li>
+						<li>
+							<a href="fungi.html"><img src="svg/fungi.svg" class="svg white" alt="" title="" /></a>
+						</li>
+						<li class="menuicon">
+							<a href="#add-location"><img src="svg/plus.svg" class="svg white" alt="" title="" /></a>
+						</li>
+						<li>
+							<a href="#my-locations"><img src="svg/map-location.svg" class="svg white" alt="" title="" /></a>
+						</li>
+						<li>
+							<a href="#" data-popup=".login-screen" class="open-popup"><img src="svg/heart.svg" class="svg white" alt="" title="" /></a>
+						</li>
+					</ul>
+				</div>
+			</div><!-- Bottom Toolbar [END] -->
+		</div>
+	</div>
+
+	
+	
+<!--======================================================
+	popups and other internal pages [begin]
+	======================================================-->
+	
+<!-- LOGIN POPUP                    -->
+	<div class="popup login-screen modal-in">
+		<div class="content-block-login">
+			<div class="form_logo"><img src="./img/appname-green.svg" class="svg white" alt="" title="" /></div>
+			<div class="loginform">
+				<form id="LoginForm" method="post" class="ajax-submit" action="http://funga.dk/api/login.php">
+					<input type="text" name="mail" value="" class="form_input required" placeholder="Email" />
+					<input type="password" name="password" value="" class="form_input required" placeholder="Adgangskode" />
+					<input type="submit" name="submit" class="form_submit" id="submit" value="Login" />
+				</form>
+				<div class="forgot_pass"><a href="#" data-popup=".popup-forgot" class="open-popup">Glemt password?</a></div>
+			</div>
+			
+            <div class="signup_bottom">
+                <a href="#" data-popup=".popup-signup" class="open-popup">Opret bruger</a>
+            </div>
+			<div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="svg/close.svg" class="svg white" alt="" title="" /></a></div>
+		</div>
+	</div>
+<!-- Register Popup [Begin] -->
+	<div class="popup popup-signup">
+		<div class="content-block-login">
+			<div class="form_logo"><img src="img/appname-green.svg" class="svg" alt="" title="" /></div>
+			<div class="loginform">
+				<form id="LoginForm" method="post">
+					<input type="text" name="Username" value="" class="form_input required" placeholder="Brugernavn" />
+					<input type="text" name="Email" value="" class="form_input required" placeholder="Email" />
+					<input type="password" name="Password" value="" class="form_input required" placeholder="Adgangskode" />
+					<input type="submit" name="submit" class="form_submit" id="submit" value="OPRET" />
+				</form>
+				<div class="signup_social">
+					<a href="#" class="signup_facebook">FACEBOOK</a>
+					<a href="#" class="signup_twitter">TWITTER</a>
+				</div>
+			</div>
+			<div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="svg/close.svg" class="svg white" alt="" title="" /></a></div>
+		</div>
+	</div>
+<!-- Login Popup [Begin] -->
+	<div class="popup popup-forgot">
+		<div class="content-block-login">
+			<div class="form_logo"><img src="img/appname-green.svg" class="svg" alt="" title="" /></div>
+			<div class="loginform">
+				<form id="LoginForm" method="post">
+					<input type="text" name="Email" value="" class="form_input required" placeholder="Email" />
+					<input type="submit" name="submit" class="form_submit" id="submit" value="Gensend adgangskode" />
+				</form>
+				<div class="signup_bottom">
+					<p>Tjek din email og følg instruktionerne til at nulstille din adgangskode.</p>
+				</div>
+			</div>
+			<div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="svg/close.svg" class="svg white" alt="" title="" /></a></div>
+		</div>
+	</div>
+	
+	<!-- Path to Framework7 Library JS-->
+	<script type="text/javascript" src="js/framework7.js"></script>
+	<!-- Path to your app js-->
+	<script type="text/javascript" src="js/svgInjector.js"></script>
+	<script type="text/javascript" src="js/my-app.js"></script>
+	<script>
+	</script>
+	<!-- ACCESS TO NATIVE API WITH CORDOVA -->
+	<script type="text/javascript" src="cordova.js"></script>
+</body>
+</html>
